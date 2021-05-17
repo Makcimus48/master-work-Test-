@@ -1,0 +1,96 @@
+%%%% Начало оформления заголовка - оставить без изменений !!! %%%%
+\input{my_folder/task_settings}	
+	
+				{%\normalfont %2020
+						\MakeUppercase{\SPbPU}}\\
+				\institute
+
+\par}\intervalS% завершает input
+
+				\noindent
+				\begin{minipage}{\linewidth}
+				\vspace{\mfloatsep} % интервал 	
+				\begin{tabularx}{\linewidth}{Xl}
+					&УТВЕРЖДАЮ      \\
+					&\HeadTitle     \\			
+					&\underline{\hspace*{0.1\textheight}} \Head     \\
+					&<<\underline{\hspace*{0.05\textheight}}>> \underline{\hspace*{0.1\textheight}} \thesisYear г.  \\  
+				\end{tabularx}
+				\vspace{\mfloatsep} % интервал 	
+				\end{minipage}
+
+\intervalS{\centering\bfseries%
+
+				ЗАДАНИЕ\\
+				на выполнение %с 2020 года 
+				%по выполнению % до 2020 года
+				выпускной квалификационной работы
+
+
+\intervalS\normalfont%
+
+				студенту \uline{\AuthorFullDat{} гр.~\group}
+
+
+\par}\intervalS%
+%%%%
+%%%% Конец оформления заголовка  %%%%
+ 	
+	
+	
+\begin{enumerate}[1.]
+	\item Тема работы: {\expandafter \ulined \thesisTitle.}
+	%\item Тема работы (на английском языке): \uline{\thesisTitleEn.} % вероятно после 2021 года
+	\item Срок сдачи студентом законченной работы: \uline{\thesisDeadline.} 
+	\item Исходные данные по работе: \underline{\hspace*{0.4\textheight}}%
+	\begin{enumerate}[label=\theenumi\arabic*.]
+		\item Научные работы о подходах по построению высоконагруженных систем в веб-приложениях,
+		\item Документация используемых фреймворков и инструментов, применяемых для разработки.
+	\end{enumerate}
+	\printbibliographyTask % печать списка источников % КОММЕНТИРУЕМ ЕСЛИ НЕ ИСПОЛЬЗУЕТСЯ
+	% В СЛУЧАЕ, ЕСЛИ НЕ ИСПОЛЬЗУЕТСЯ МОЖНО ТАКЖЕ ЗАЙТИ В setup.tex и закомментировать \vspace{-0.28\curtextsize}
+	\item Содержание работы (перечень подлежащих разработке вопросов):
+	\begin{enumerate}[label=\theenumi\arabic*.]
+		\item Исследование источников определения высоконагруженных веб-приложений;
+		\item Анализ источников по предметной области;
+		\item Формулирование требований к высоконагруженным приложениям;
+		\item Анализ имеющихся подходов и средств построения высоконагруженных веб-приложений;
+		\item Выделение важных критериев высоконагруженных систем, разработка тестов для оценки;
+		\item Оценка накопленных экспериментальных данных статистическими методами;
+		\item Проектирование и разработка веб-приложения в соответствии с результатами тестов.
+	\end{enumerate}
+	\item Перечень графического материала (с указанием обязательных чертежей): 
+	\begin{enumerate}[label=\theenumi\arabic*.]
+		\item Диаграмма классов.
+	\end{enumerate}	
+	\item Консультанты по работе:
+	\begin{enumerate}[label=\theenumi\arabic*.] 
+		%\item  \uline{\emakefirstuc{\ConsultantExtraDegree}, \ConsultantExtra.} % закомментировать при необходимости, идёт первый по порядку.
+		\item \uline{\emakefirstuc{\ConsultantNormDegree}, \ConsultantNorm{} (содержание и нормоконтроль).} %	Обязателен для всех студентов
+	\end{enumerate}
+		\item Дата выдачи задания: \uline{\thesisStartDate.}
+\end{enumerate}
+
+\intervalS%можно удалить пробел
+
+Руководитель ВКР \uline{\hspace*{0.1\textheight} \Supervisor}
+
+
+\intervalS%можно удалить пробел
+
+Консультант \uline{\hspace*{0.1\textheight}\ConsultantExtra}
+
+
+\intervalS%можно удалить пробел
+
+%Консультант по нормоконтролю \uline{\hspace*{0.1\textheight} \ConsultantNorm}%ПОКА НЕ ТРЕБУЕТСЯ, Т.К. ОН У ВСЕХ ПО УМОЛЧАНИЮ
+
+Задание принял к исполнению \uline{\thesisStartDate}
+
+\intervalS%можно удалить пробел
+
+Студент \uline{\hspace*{0.1\textheight}  \Author}
+
+
+
+\input{my_folder/task_settings_restore}	% настройки - конец
